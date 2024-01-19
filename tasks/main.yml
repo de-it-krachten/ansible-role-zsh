@@ -8,7 +8,7 @@
 - name: Zsh profile
   become: yes
   become_user: "{{ zsh_user }}"
-  when: zsh_user is defined zsh_ohmyzsh | bool
+  when: zsh_user is defined and zsh_ohmyzsh | bool
   block:
 
     - name: Get latest code for oh-my-zsh  # noqa latest[git]
@@ -25,7 +25,7 @@
         mode: "0644"
       when: ohmyzsh.changed
 
-    - name: Activate theme agnoster in template
+    - name: Activate custom theme
       ansible.builtin.replace:
         path: ~/.zshrc
         regexp: "^ZSH_THEME=.*"
