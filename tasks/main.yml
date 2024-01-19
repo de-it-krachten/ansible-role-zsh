@@ -1,0 +1,43 @@
+---
+
+- name: Install zsh
+  ansible.builtin.package:
+    name: "{{ zsh_packages }}"
+    state: present
+
+- name: Zsh profile
+  become: yes
+  become_user: "{{ zsh_user }}"
+  when: zsh_user is defined zsh_ohmyzsh | bool
+  block:
+
+    - name: Get latest code for oh-my-zsh  # noqa latest[git]
+      ansible.builtin.git:
+        repo: https://github.com/ohmyzsh/ohmyzsh.git
+        dest: "/home/{{ zsh_user }}/.oh-my-zsh"
+      register: ohmyzsh
+
+    - name: Copy .zshrc if ohmyzsh changed  # noqa no-handler
+      ansible.builtin.copy:
+        src: "/home/{{ zsh_user }}/.oh-my-zsh/templates/zshrc.zsh-template"
+        dest: ~/.zshrc
+        remote_src: true
+        mode: "0644"
+      when: ohmyzsh.changed
+
+    - name: Activate theme agnoster in template
+      ansible.builtin.replace:
+        path: ~/.zshrc
+        regexp: "^ZSH_THEME=.*"
+        replace: "ZSH_THEME=\"{{ zsh_theme }}\""
+
+    - name: Activate plugins in template
+      ansible.builtin.replace:
+        path: ~/.zshrc
+        regexp: "^plugins=.*"
+        replace: "plugins=(git z)"
+
+    - name: Activate direnv in template
+      ansible.builtin.blockinfile:
+        path: ~/.zshrc
+        block: "{{ zsh_zshrc }}"

@@ -1,0 +1,13 @@
+---
+
+# Generic
+generic:
+  role: ansible-role-zsh
+  role_short: zsh
+  role_description: |
+    Installs zsh w/ my-zsh
+  collections: []
+
+molecule:
+  requirements:
+    roles_extra: []

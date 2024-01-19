@@ -1,0 +1,18 @@
+---
+
+# List of packages
+zsh_packages:
+  - zsh
+
+# Instals ohmyzsh
+zsh_ohmyzsh: true
+
+# Zsh theme for ohmyzsh
+zsh_theme: agnoster
+
+# ZSH additions
+zsh_zshrc: |
+  # personal additions
+  source ~/.zshrc.add
+  # direnv
+  eval "$(direnv hook zsh)"
