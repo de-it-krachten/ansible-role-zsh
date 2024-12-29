@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/de-it-krachten/ansible-role-zsh/compare/v1.1.0...v1.2.0) (2024-12-29)
+
+
+### Features
+
+* Update supported platforms & CI ([435a4f1](https://github.com/de-it-krachten/ansible-role-zsh/commit/435a4f1a884c4b5bc7d8c28901f9df844829dc8a))
+
 # [1.1.0](https://github.com/de-it-krachten/ansible-role-zsh/compare/v1.0.0...v1.1.0) (2024-06-03)
 
 
