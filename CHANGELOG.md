@@ -1,3 +1,14 @@
+# [1.3.0](https://github.com/de-it-krachten/ansible-role-zsh/compare/v1.2.0...v1.3.0) (2025-08-07)
+
+
+### Features
+
+* Add support for AlmaLinux 10 ([e7345de](https://github.com/de-it-krachten/ansible-role-zsh/commit/e7345ded659eb4863a603fe804eed58e42d682e6))
+* Add support for Debian 13 (Trixie) ([ea13134](https://github.com/de-it-krachten/ansible-role-zsh/commit/ea13134d064d9da27afe10a5c5f2d52e0e0af2f5))
+* Add support for OracleLinux 10 ([2409e6f](https://github.com/de-it-krachten/ansible-role-zsh/commit/2409e6faa4637f0a49e4db2104f7582af0324394))
+* Add support for Red Hat Enterprise Linux 10 ([625aff3](https://github.com/de-it-krachten/ansible-role-zsh/commit/625aff332fbb50259990546f85208cc2fdf9c846))
+* Add support for RockyLinux 10 ([995354b](https://github.com/de-it-krachten/ansible-role-zsh/commit/995354bae6b2bfe1e451268b7cba9cf513dce4e7))
+
 # [1.2.0](https://github.com/de-it-krachten/ansible-role-zsh/compare/v1.1.0...v1.2.0) (2024-12-29)
 
 
