@@ -1,3 +1,12 @@
+# [1.5.0](https://github.com/de-it-krachten/ansible-role-zsh/compare/v1.4.0...v1.5.0) (2026-07-26)
+
+
+### Features
+
+* Added support for Fedora 44 ([526cf5a](https://github.com/de-it-krachten/ansible-role-zsh/commit/526cf5a0e57d91d15eec679a20d2b41ae99d8c75))
+* Added support for Ubuntu 26.04 LTS ([7e54538](https://github.com/de-it-krachten/ansible-role-zsh/commit/7e5453861edf5f497c0c352926687928e8ef5277))
+* Drop support for Fedora 42 ([35bbfa5](https://github.com/de-it-krachten/ansible-role-zsh/commit/35bbfa5b42d8eda78986b65dd259afe15d49deba))
+
 # [1.4.0](https://github.com/de-it-krachten/ansible-role-zsh/compare/v1.3.0...v1.4.0) (2026-03-15)
 
 
