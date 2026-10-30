@@ -1,3 +1,15 @@
+# [1.6.0](https://github.com/de-it-krachten/ansible-role-zsh/compare/v1.5.0...v1.6.0) (2026-10-30)
+
+
+### Bug Fixes
+
+* Copy .zshrc from template if not found ([fbbfb8c](https://github.com/de-it-krachten/ansible-role-zsh/commit/fbbfb8cde0814d2dc687f2c95d15cb9b37128941))
+
+
+### Features
+
+* Drop support for Debian 11 (Bullseye) ([5f911d5](https://github.com/de-it-krachten/ansible-role-zsh/commit/5f911d5e9653c3aebfecc7128c45b230bcc034c5))
+
 # [1.5.0](https://github.com/de-it-krachten/ansible-role-zsh/compare/v1.4.0...v1.5.0) (2026-07-26)
 
 
